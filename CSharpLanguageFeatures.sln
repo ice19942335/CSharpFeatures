@@ -4,6 +4,18 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_ReadonlyStruct", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_DefaultInterfaceMethods", "src\CSharp_8\CSharp8_DefaultInterfaceMethods\CSharp8_DefaultInterfaceMethods.csproj", "{DBB3D1AD-8C3C-4717-8D9D-8599C604F87D}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "CSarp8", "CSarp8", "{8F116935-2AB1-46E5-9D1C-6ADC991E2E29}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "EnhancedPatternMatching", "EnhancedPatternMatching", "{F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_PropertyPatterns", "src\CSharp_8\EnhancedPatternMatching\CSharp8_PropertyPatterns\CSharp8_PropertyPatterns.csproj", "{CA164A68-598C-4112-85C0-EBB89D2A0DB4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_SwitchExpressions", "src\CSharp_8\EnhancedPatternMatching\CSharp8_SwitchExpressions\CSharp8_SwitchExpressions.csproj", "{FD4014F3-2A1A-4A8A-A0FF-F06624D21B52}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_TuplePatterns", "src\CSharp_8\EnhancedPatternMatching\CSharp8_TuplePatterns\CSharp8_TuplePatterns.csproj", "{853F342A-1280-4313-870E-6FD0187E27F5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_PositionalPatterns", "src\CSharp_8\EnhancedPatternMatching\CSharp8_PositionalPatterns\CSharp8_PositionalPatterns.csproj", "{91C2434B-ED01-4273-B3E3-F4CDE40C2B3D}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -18,5 +30,30 @@ Global
 		{DBB3D1AD-8C3C-4717-8D9D-8599C604F87D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DBB3D1AD-8C3C-4717-8D9D-8599C604F87D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DBB3D1AD-8C3C-4717-8D9D-8599C604F87D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CA164A68-598C-4112-85C0-EBB89D2A0DB4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CA164A68-598C-4112-85C0-EBB89D2A0DB4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CA164A68-598C-4112-85C0-EBB89D2A0DB4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CA164A68-598C-4112-85C0-EBB89D2A0DB4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FD4014F3-2A1A-4A8A-A0FF-F06624D21B52}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FD4014F3-2A1A-4A8A-A0FF-F06624D21B52}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FD4014F3-2A1A-4A8A-A0FF-F06624D21B52}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FD4014F3-2A1A-4A8A-A0FF-F06624D21B52}.Release|Any CPU.Build.0 = Release|Any CPU
+		{853F342A-1280-4313-870E-6FD0187E27F5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{853F342A-1280-4313-870E-6FD0187E27F5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{853F342A-1280-4313-870E-6FD0187E27F5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{853F342A-1280-4313-870E-6FD0187E27F5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{91C2434B-ED01-4273-B3E3-F4CDE40C2B3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{91C2434B-ED01-4273-B3E3-F4CDE40C2B3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{91C2434B-ED01-4273-B3E3-F4CDE40C2B3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{91C2434B-ED01-4273-B3E3-F4CDE40C2B3D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{DBB3D1AD-8C3C-4717-8D9D-8599C604F87D} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
+		{AEEE2042-C4B8-4DDE-A5CA-9DC8CE78A029} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
+		{F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
+		{CA164A68-598C-4112-85C0-EBB89D2A0DB4} = {F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9}
+		{FD4014F3-2A1A-4A8A-A0FF-F06624D21B52} = {F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9}
+		{853F342A-1280-4313-870E-6FD0187E27F5} = {F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9}
+		{91C2434B-ED01-4273-B3E3-F4CDE40C2B3D} = {F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9}
 	EndGlobalSection
 EndGlobal
