@@ -5,6 +5,7 @@
         <TargetFramework>net9.0</TargetFramework>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
+        <RootNamespace>src/CSharp_8/CSharp8_DefaultInterfaceMethods</RootNamespace>
     </PropertyGroup>
 
 </Project>
