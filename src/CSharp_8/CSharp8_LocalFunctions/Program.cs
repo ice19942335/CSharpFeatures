@@ -14,7 +14,6 @@ public static class Program
         }
     }
 
-    // One of the useful features of local functions is that they can allow exceptions to surface immediately.
     private static IEnumerable<int> OddSequence(int start, int end)
     {
         if (start < 0 || start > 99)
@@ -26,7 +25,7 @@ public static class Program
             
         return GetOddSequenceEnumerator();
 
-        
+        // One of the useful features of local functions is that they can allow exceptions to surface immediately.
         IEnumerable<int> GetOddSequenceEnumerator()
         {
             for (var i = start; i <= end; i++)
