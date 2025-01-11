@@ -1,0 +1,6 @@
+﻿services:
+  csharp8_asynchronousstreams:
+    image: csharp8_asynchronousstreams
+    build:
+      context: .
+      dockerfile: src/CSharp_8/CSharp8_AsynchronousStreams/Dockerfile
