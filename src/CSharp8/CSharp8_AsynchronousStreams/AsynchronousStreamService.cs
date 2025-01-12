@@ -1,4 +1,5 @@
-﻿using Microsoft.EntityFrameworkCore;
+﻿using System.Runtime.CompilerServices;
+using Microsoft.EntityFrameworkCore;
 
 public class AsynchronousStreamService(IServiceProvider serviceProvider) : BackgroundService
 {
@@ -11,7 +12,7 @@ public class AsynchronousStreamService(IServiceProvider serviceProvider) : Backg
             var timespan = TimeSpan.FromSeconds(5);
             var cts = new CancellationTokenSource(delay: timespan);
             using var scope = serviceProvider.CreateScope();
-            var context = scope.ServiceProvider.GetRequiredService<AppDbContext>();
+            var context = scope.ServiceProvider.GetRequiredService<TestDbContext>();
             Console.WriteLine($"Total animals count: {context.Animals.Count(x => x.Id > 0)}");
             Console.WriteLine($"Processed Animals count BEFORE Run: {context.Animals.Count(x => x.Id > 0 && x.Processed)}");
             Console.WriteLine($"Unprocessed Animals count BEFORE Run: {context.Animals.Count(x => x.Id > 0 && !x.Processed)}");
@@ -22,7 +23,7 @@ public class AsynchronousStreamService(IServiceProvider serviceProvider) : Backg
         }
     }
 
-    private async Task Run(AppDbContext context, CancellationToken cancellationToken)
+    private async Task Run(TestDbContext context, CancellationToken cancellationToken)
     {
         try
         {
@@ -35,7 +36,9 @@ public class AsynchronousStreamService(IServiceProvider serviceProvider) : Backg
                 if (cancellationToken.IsCancellationRequested)
                 {
                     return;
-                };
+                }
+
+                ;
             }
         }
         catch (TaskCanceledException)
@@ -44,8 +47,19 @@ public class AsynchronousStreamService(IServiceProvider serviceProvider) : Backg
         }
     }
 
-    private IAsyncEnumerable<Animal> GenerateStream(AppDbContext context, CancellationToken stoppingToken)
+    private async IAsyncEnumerable<Animal> GenerateStream(TestDbContext context, [EnumeratorCancellation] CancellationToken cancellationToken)
     {
-        return context.Animals.Where(x => !x.Processed).AsAsyncEnumerable();
+        await foreach (var item in context.Animals.Where(x => !x.Processed).AsAsyncEnumerable().WithCancellation(cancellationToken))
+        {
+            yield return item;
+        }
+        
+         /*
+                            return context.Animals.FromSqlRaw($"""
+                                                   SELECT * FROM dbo."Animals" WHERE "Processed" = 0
+                                                   """).AsAsyncEnumerable();
+         */
+
+        //return context.Animals.Where(x => !x.Processed).AsAsyncEnumerable();
     }
 }

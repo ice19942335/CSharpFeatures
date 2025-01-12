@@ -5,8 +5,8 @@
         await Task.Yield();
         while (!stoppingToken.IsCancellationRequested)
         {
-            Console.WriteLine($"{DateTime.Now:HH:mm:ss.fff} Hello World! -> Seems this background service doesn't block the stream!");
-            await Task.Delay(250, stoppingToken);
+            Console.WriteLine($"{DateTime.Now:HH:mm:ss.fff} Hello World!!! -> Seems that data is fetched from DB asynchronously =) Because you see this message during processor processing Animal item.");
+            await Task.Delay(10, stoppingToken);
         }
     }
 }

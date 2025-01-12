@@ -1,4 +1,4 @@
-﻿public class DbSeedService(AppDbContext context) : BackgroundService
+﻿public class DbSeedService(TestDbContext context) : BackgroundService
 {
     private static readonly Random Random = new Random();
     
@@ -13,7 +13,7 @@
                 Birthday = DateTime.Now,
             });
             await context.SaveChangesAsync(stoppingToken);
-            await Task.Delay(500, stoppingToken);
+            await Task.Delay(10, stoppingToken);
         }
     }
 }
