@@ -27,7 +27,7 @@ public class AsynchronousStreamService(IServiceProvider serviceProvider) : Backg
     {
         try
         {
-            await foreach (var item in GenerateStream(context, cancellationToken))
+            await foreach (var item in GetAnimalsStream(context, cancellationToken))
             {
                 Console.WriteLine($"{DateTime.Now:HH:mm:ss.fff}, Processing - {item}");
                 item.Processed = true;
@@ -47,18 +47,20 @@ public class AsynchronousStreamService(IServiceProvider serviceProvider) : Backg
         }
     }
 
-    private async IAsyncEnumerable<Animal> GenerateStream(TestDbContext context, [EnumeratorCancellation] CancellationToken cancellationToken)
+    private IAsyncEnumerable<Animal> GetAnimalsStream(TestDbContext context, CancellationToken cancellationToken)
     {
-        await foreach (var item in context.Animals.Where(x => !x.Processed).AsAsyncEnumerable().WithCancellation(cancellationToken))
-        {
-            yield return item;
-        }
-        
-         /*
-                            return context.Animals.FromSqlRaw($"""
-                                                   SELECT * FROM dbo."Animals" WHERE "Processed" = 0
-                                                   """).AsAsyncEnumerable();
-         */
+        return context.Animals.Where(x => !x.Processed).AsAsyncEnumerable();
+
+        // await foreach (var item in context.Animals.Where(x => !x.Processed).AsAsyncEnumerable().WithCancellation(cancellationToken))
+        // {
+        //     yield return item;
+        // }
+
+        /*
+                           return context.Animals.FromSqlRaw($"""
+                                                  SELECT * FROM dbo."Animals" WHERE "Processed" = 0
+                                                  """).AsAsyncEnumerable();
+        */
 
         //return context.Animals.Where(x => !x.Processed).AsAsyncEnumerable();
     }
