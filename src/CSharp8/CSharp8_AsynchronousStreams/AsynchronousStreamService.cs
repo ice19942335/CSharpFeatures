@@ -37,8 +37,6 @@ public class AsynchronousStreamService(IServiceProvider serviceProvider) : Backg
                 {
                     return;
                 }
-
-                ;
             }
         }
         catch (TaskCanceledException)
