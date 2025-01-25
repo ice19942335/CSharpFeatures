@@ -35,6 +35,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndicesAndRanges", "src\CSh
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullCoalescingOperators", "src\CSharp8\NullCoalescingOperators\NullCoalescingOperators.csproj", "{6C4C606F-DAA5-469F-9F0D-015E67B76BAD}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnmanagedConstructedTypes", "src\CSharp8\UnmanagedConstructedTypes\UnmanagedConstructedTypes.csproj", "{9481D691-5FE2-45BE-8C0E-3B988C0C81B6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -93,6 +95,10 @@ Global
 		{6C4C606F-DAA5-469F-9F0D-015E67B76BAD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C4C606F-DAA5-469F-9F0D-015E67B76BAD}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C4C606F-DAA5-469F-9F0D-015E67B76BAD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{9481D691-5FE2-45BE-8C0E-3B988C0C81B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9481D691-5FE2-45BE-8C0E-3B988C0C81B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9481D691-5FE2-45BE-8C0E-3B988C0C81B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9481D691-5FE2-45BE-8C0E-3B988C0C81B6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
@@ -109,5 +115,6 @@ Global
 		{3AF25BB9-195E-4B7D-AA89-57094C20F3D7} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
 		{1B0E397E-A823-4041-AC80-6D5EE6A85E2D} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
 		{6C4C606F-DAA5-469F-9F0D-015E67B76BAD} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
+		{9481D691-5FE2-45BE-8C0E-3B988C0C81B6} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
 	EndGlobalSection
 EndGlobal
