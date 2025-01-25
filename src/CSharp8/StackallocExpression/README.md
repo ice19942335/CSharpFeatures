@@ -12,4 +12,4 @@
 Seems that the collection expression feature is the fastest, and it does not allocate any memory in `heap`.<br>
 Collection expression also it has very nice and beautiful easy to use API.
 In my opinion we should use collection expression in every possible case.<br>
-![img.png](img.png)
+![img_1.png](img_1.png)
