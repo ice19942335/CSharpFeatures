@@ -1,4 +1,4 @@
-﻿namespace IndicesAndRanges;
+﻿namespace CSharp8_IndicesAndRanges;
 
 class Program
 {

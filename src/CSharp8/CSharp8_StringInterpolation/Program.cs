@@ -1,4 +1,4 @@
-﻿namespace StringInterpolation;
+﻿namespace CSharp8_StringInterpolation;
 
 class Program
 {

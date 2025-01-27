@@ -1,4 +1,4 @@
-﻿namespace UnmanagedConstructedTypes;
+﻿namespace CSharp8_UnmanagedConstructedTypes;
 
 class MyCustomDict<TKey, TValue>
     where TKey : struct

@@ -31,15 +31,15 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_ReadonlyStruct", "s
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_UsingDeclarations", "src\CSharp8\CSharp8_UsingDeclarations\CSharp8_UsingDeclarations.csproj", "{3AF25BB9-195E-4B7D-AA89-57094C20F3D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IndicesAndRanges", "src\CSharp8\IndicesAndRanges\IndicesAndRanges.csproj", "{1B0E397E-A823-4041-AC80-6D5EE6A85E2D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_IndicesAndRanges", "src\CSharp8\CSharp8_IndicesAndRanges\CSharp8_IndicesAndRanges.csproj", "{1B0E397E-A823-4041-AC80-6D5EE6A85E2D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NullCoalescingOperators", "src\CSharp8\NullCoalescingOperators\NullCoalescingOperators.csproj", "{6C4C606F-DAA5-469F-9F0D-015E67B76BAD}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_NullCoalescingOperators", "src\CSharp8\CSharp8_NullCoalescingOperators\CSharp8_NullCoalescingOperators.csproj", "{6C4C606F-DAA5-469F-9F0D-015E67B76BAD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnmanagedConstructedTypes", "src\CSharp8\UnmanagedConstructedTypes\UnmanagedConstructedTypes.csproj", "{9481D691-5FE2-45BE-8C0E-3B988C0C81B6}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_UnmanagedConstructedTypes", "src\CSharp8\CSharp8_UnmanagedConstructedTypes\CSharp8_UnmanagedConstructedTypes.csproj", "{9481D691-5FE2-45BE-8C0E-3B988C0C81B6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StackallocExpression", "src\CSharp8\StackallocExpression\StackallocExpression.csproj", "{D9BEE16E-A588-4534-8936-33DE86787D9F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_StackallocExpression", "src\CSharp8\CSharp8_StackallocExpression\CSharp8_StackallocExpression.csproj", "{D9BEE16E-A588-4534-8936-33DE86787D9F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "StringInterpolation", "StringInterpolation\StringInterpolation.csproj", "{A2F1AC66-42B9-4D17-BC18-B86F4244F484}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharp8_StringInterpolation", "src\CSharp8\CSharp8_StringInterpolation\CSharp8_StringInterpolation.csproj", "{59A9CC80-F580-4C97-A2FD-12968E686EE8}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -107,10 +107,10 @@ Global
 		{D9BEE16E-A588-4534-8936-33DE86787D9F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D9BEE16E-A588-4534-8936-33DE86787D9F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D9BEE16E-A588-4534-8936-33DE86787D9F}.Release|Any CPU.Build.0 = Release|Any CPU
-		{A2F1AC66-42B9-4D17-BC18-B86F4244F484}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{A2F1AC66-42B9-4D17-BC18-B86F4244F484}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{A2F1AC66-42B9-4D17-BC18-B86F4244F484}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{A2F1AC66-42B9-4D17-BC18-B86F4244F484}.Release|Any CPU.Build.0 = Release|Any CPU
+		{59A9CC80-F580-4C97-A2FD-12968E686EE8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{59A9CC80-F580-4C97-A2FD-12968E686EE8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{59A9CC80-F580-4C97-A2FD-12968E686EE8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{59A9CC80-F580-4C97-A2FD-12968E686EE8}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{F715FCBF-E0D1-4813-A4DC-F09FD63ADEF9} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
@@ -129,6 +129,6 @@ Global
 		{6C4C606F-DAA5-469F-9F0D-015E67B76BAD} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
 		{9481D691-5FE2-45BE-8C0E-3B988C0C81B6} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
 		{D9BEE16E-A588-4534-8936-33DE86787D9F} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
-		{A2F1AC66-42B9-4D17-BC18-B86F4244F484} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
+		{59A9CC80-F580-4C97-A2FD-12968E686EE8} = {8F116935-2AB1-46E5-9D1C-6ADC991E2E29}
 	EndGlobalSection
 EndGlobal

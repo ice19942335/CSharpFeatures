@@ -1,7 +1,7 @@
 ﻿using BenchmarkDotNet.Attributes;
 using BenchmarkDotNet.Running;
 
-namespace StackallocExpression;
+namespace CSharp8_StackallocExpression;
 
 class Program
 {

@@ -1,4 +1,4 @@
-﻿namespace NullCoalescingOperators;
+﻿namespace CSharp8_NullCoalescingOperators;
 
 class Program
 {
